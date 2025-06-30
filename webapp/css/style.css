@@ -1,0 +1,107 @@
+/* Enter your custom styles here
+.headerButton {
+    background-color: #0a74da;
+    color: white;
+    border-radius: 8px;
+}
+
+.customCard {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.filterBar {
+    margin-bottom: 15px;
+}
+
+.styledTable {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+/* Button Styling - More modern and interactive */
+.headerButton {
+    background-color: #007acc;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.headerButton:hover {
+    background-color: #005fa3;
+    cursor: pointer;
+}
+
+.headerButton:active {
+    background-color: #004a80;
+}
+
+/* Card Styling - Smooth, clean, with hover lift effect */
+.customCard {
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(135deg, #f7f9fc, #eaf1f8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Filter Bar Styling - Soft background and spacing */
+.filterBar {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Styled Table - Clean, with slight shadow and border separation */
+.styledTable {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Table Row Hover */
+.styledTable tr:hover {
+    background-color: #f4f8fb;
+}
+
+/* Table Header */
+.styledTable th {
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Responsive Enhancements */
+@media only screen and (max-width: 768px) {
+    .customCard {
+        margin: 10px;
+        padding: 15px;
+    }
+    .headerButton {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

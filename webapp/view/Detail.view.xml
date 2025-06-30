@@ -1,0 +1,18 @@
+
+
+<mvc:View controllerName="com.asint.interns.project2.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="detailPage" title="{i18n>detailPageTitle}">
+        
+        <content>
+            <VBox class="customCard" alignItems="Center" justifyContent="Center">
+                
+                <Text id="companyNameText" text="{i18n>companyNameDefault}" class="detailText"/>
+
+            </VBox>
+        </content>
+        
+    </Page>
+</mvc:View>

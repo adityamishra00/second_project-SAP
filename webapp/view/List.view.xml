@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="com.asint.interns.project2.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+
+    <Page id="page" title="{i18n>title}" backgroundDesign="List">
+    
+        <headerContent>
+            <Button text="{i18n>showChartButton}" press="onShowChart" type="Emphasized" icon="sap-icon://bar-chart" class="headerButton"/>
+        </headerContent>
+
+        <VBox class="customCard">
+
+            <smartFilterBar:SmartFilterBar
+                id="smartFilterBar"
+                entitySet="Suppliers"
+                showClearButton="true"
+                showFilterConfiguration="true"
+                showGoOnFB="true"
+                liveMode="false"
+                class="filterBar">
+
+                <smartFilterBar:controlConfiguration>
+                    <smartFilterBar:ControlConfiguration key="CompanyName" label="{i18n>companyNameLabel}" visibleInAdvancedArea="true" />
+                    <smartFilterBar:ControlConfiguration key="City" label="{i18n>cityLabel}" visibleInAdvancedArea="true" />
+                    <smartFilterBar:ControlConfiguration key="Country" label="{i18n>countryLabel}" visibleInAdvancedArea="true" />
+                </smartFilterBar:controlConfiguration>
+
+            </smartFilterBar:SmartFilterBar>
+
+            <smartTable:SmartTable
+                id="supplierTable"
+                entitySet="Suppliers"
+                tableType="ResponsiveTable"
+                useExportToExcel="true"
+                useTablePersonalisation="true"
+                header="{i18n>tableHeader}"
+                showRowCount="true"
+                smartFilterId="smartFilterBar"
+                persistencyKey="SmartTableKey"
+                enableAutoBinding="true"
+                useVariantManagement="true"
+                class="styledTable">
+            </smartTable:SmartTable>
+
+        </VBox>
+
+    </Page>
+</mvc:View>
